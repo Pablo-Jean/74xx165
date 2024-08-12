@@ -62,8 +62,12 @@ typedef struct{
 	uint8_t *pu8IntBuffer;
 }l74xx165_t;
 
+/**
+ * @brief
+ *
+ */
 typedef struct{
-	l74xx165_spi_t fxnSpiReceived;
+	l74xx165_spi_t fxnSpiReceived; /** comment */
 	l74xx165_gpio_t fxnGpioCS;
 	l74xx165_gpio_t fxnGpioLoad;
 	l74xx165_mtx_t fxnMtxLock;
@@ -76,6 +80,16 @@ typedef struct{
  * Publics Function Prototypes
  */
 
+/**
+ * @fn l74xx165_err_e l74xx165_init(l74xx165_t*, l74xx165_params_t*)
+ * @brief Initialize the 74xx165 handler, the functions checks for erros.
+ *
+ * @pre none
+ * @post allow you to use l74xx165_read_byte and l74xx165_read_bit reutines.
+ * @param handler ....
+ * @param params ...
+ * @return ....
+ */
 l74xx165_err_e l74xx165_init(l74xx165_t *handler, l74xx165_params_t *params);
 
 l74xx165_err_e l74xx165_read_byte(l74xx165_t *handler, uint8_t Index, uint8_t *ReadedByte);
