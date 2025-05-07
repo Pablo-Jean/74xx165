@@ -12,7 +12,7 @@ V1.0.0
 
 # 74xx165 Library Documentation
 
-<center><img src="imgs/74hc165.gif"  width="500"></center>
+<center><img src="imgs/74hc165.png"  width="400"></center>
 
 This documentation describes the **74xx165** C library, which provides a hardware-abstracted interface to control and read data from 74xx165 parallel-in serial-out shift registers (such as 74HC165, 74LS165, etc.). The library is designed for embedded systems and allows reading multiple cascaded devices using SPI and GPIO.
 
